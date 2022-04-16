@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+		@keyframes animate-earth {
+			from { background-position: 120% 70px, 10px 0px, 0px 0px;  } 
+			to { background-position: -20% 70px, -1000px 0px, -500px 0px; }
+		}
+		@-webkit-keyframes animate-earth {
+			from { background-position: 120% 70px, 0px 0px, 0px 0px;  } 
+			to { background-position: -20% 70px, -1000px 0px, -500px 0px; }
+		}
+		@-moz-keyframes animate-earth {
+			from { background-position: 120% 70px, 0px 0px, 0px 0px;  } 
+			to { background-position: -20% 70px, -1000px 0px, -500px 0px; }
+		}
+		@-ms-keyframes animate-earth {
+			from { background-position: 120% 70px, 0px 0px, 0px 0px;  } 
+			to { background-position: -20% 70px, -1000px 0px, -500px 0px; }
+		}
+
+
+		@keyframes move-twink-back {
+		    from {background-position:0 0;}
+		    to {background-position:-10000px 5000px;}
+		}
+		@-webkit-keyframes move-twink-back {
+		    from {background-position:0 0;}
+		    to {background-position:-10000px 5000px;}
+		}
+		@-moz-keyframes move-twink-back {
+		    from {background-position:0 0;}
+		    to {background-position:-10000px 5000px;}
+		}
+		@-ms-keyframes move-twink-back {
+		    from {background-position:0 0;}
+		    to {background-position:-10000px 5000px;}
+		}
+
+		@keyframes move-mists-back {
+		    from {background-position:0 0;}
+		    to {background-position:-10000px 1000px;}
+		}
+		@-webkit-keyframes move-mists-back {
+		    from {background-position:0 0;}
+		    to {background-position:-10000px 1000px;}
+		}
+		@-moz-keyframes move-mists-back {
+		    from {background-position:0 0;}
+		    to {background-position:-10000px 1000px;}
+		}
+		@-ms-keyframes move-mists-back {
+		    from {background-position: 0 0;}
+		    to {background-position:-10000px 1000px;}
+		}
+
+		.stars, .twinks, .mists, .earth {
+			position:absolute;
+			top:0;
+			left:0;
+			right:0;
+			bottom:0;
+			width:100%;
+			height:100%;
+			display:block;
+            
+            
+		}
+
+		.stars {
+			background:#000 url(images/stars.png) repeat top center;
+		}
+
+        .rockete {
+            z-index: 1;
+			-ms-transform: rotate(0deg);
+			-webkit-transform: rotate(0deg);
+			transform: rotate(0deg);
+			display: block;
+            margin: 0px auto;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            margin-top: 160px;
+            margin-bottom: 0px;
+		}
+
+		.rocket {
+            z-index: 2;
+            -ms-transform: rotate(0deg);
+			-webkit-transition-duration: 0.5s;
+			-moz-transition-duration: 0.5s;
+			-webkit-transition-duration:0.5;
+			transform: rotate(0deg);
+			display: block;
+            margin: 0px auto;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            margin-top: -4%;
+            margin-bottom: 0px;
+		}
+
+		.rocket:hover { -webkit-transform:scale(1.2); -moz-transform:scale(1.2); -o-transform:scale(1.2); opacity: 1; z-index: 2; }
+
+
+		
+
+		.twinks{
+			background:transparent url(images/twinks.png) repeat top center;
+			-moz-animation:move-twink-back 200s linear infinite;
+			-ms-animation:move-twink-back 200s linear infinite;
+			-o-animation:move-twink-back 200s linear infinite;
+			-webkit-animation:move-twink-back 200s linear infinite;
+			animation:move-twink-back 200s linear infinite;
+		}
+
+		.earth {
+			margin: 0px auto;
+			background-image: url(images/earth.gif);
+			background-position: 120% 70px, 0px 0px, 0px 0px;
+			background-repeat: no-repeat, repeat-x, repeat-x;
+			animation: animate-earth linear 50s infinite;
+			-moz-animation: animate-earth linear 50s infinite;
+			-ms-animation: animate-earth linear 50s infinite;
+			-o-animation: animate-earth linear 50s infinite;
+			-webkit-animation: animate-earth linear 50s infinite;
+		}
+
+		.mists{
+		    background:transparent url(images/mists.png) repeat top center;
+			-moz-animation:move-mists-back 200s linear infinite;
+			-ms-animation:move-mists-back 200s linear infinite;
+			-o-animation:move-mists-back 200s linear infinite;
+			-webkit-animation:move-mists-back 200s linear infinite;
+			animation:move-mists-back 200s linear infinite;
+		}
+
+        .layer-3 {
+            z-index: 3;
+            -ms-transform: rotate(0deg);
+			-webkit-transform: rotate(0deg);
+			transform: rotate(0deg);
+			display: block;
+            margin: 0px auto;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            margin-top: -15%;
+            margin-bottom: 0px;
+    }
+
+    .layer-4 {
+            z-index: 4;
+            -ms-transform: rotate(0deg);
+			-webkit-transform: rotate(0deg);
+			transform: rotate(0deg);
+			display: block;
+            margin: 0px auto;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            margin-top: -15%;
+            margin-bottom: 0px;
+    }
+
+    .box {
+        position: absolute;
+        text-align: center;
+        top: 251px;
+        left: -24px;
+        width: 60%;
+        transform: rotate(345deg);
+    }
+
+    .box2 {
+        position: absolute;
+        text-align: center;
+        top: 251px;
+        right: -30px;
+        width: 60%;
+        transform: rotate(15deg);
+    }
+    
+/* DOWNLOAD BUTTON */
+.dlbutton br {display: none !important;}
+.dlbutton {
+margin: 0px auto;
+width: 200px;
+position: relative;
+z-index: 1;
+}
+
+.dlbutton a {
+color: rgb(255, 255, 255) !important;
+display: block;
+width: 200px;
+height: 50px;
+background: hsl(0, 100%, 50%);
+text-align: center;
+text-decoration: none;
+text-transform: uppercase;
+font: 20px/50px Rosewood, Bermuda, Umbra;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=&amp;amp;#39;#00b7ea&amp;amp;#39;, endColorstr=&amp;amp;#39;#009ec3&amp;amp;#39;,GradientType=0 );
+}
+
+
+
+  /* margin-top: 40px;
+  margin-bottom: 0px; */
+  /* display: block;
+        -webkit-animation:spin 4s linear infinite;
+        -moz-animation:spin 4s linear infinite;
+        animation:spin 4s linear infinite;
+}
+
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+} */
+	</style>
+</head>
+<body>
+</body>
+</html>
