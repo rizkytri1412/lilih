@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<title>HBD IKBL</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="animate.css">
+	<style>
+		@keyframes animate-earth {
+			from { background-position: 120% 70px, 10px 0px, 0px 0px;  } 
+			to { background-position: -20% 70px, -1000px 0px, -500px 0px; }
+		}
+		@-webkit-keyframes animate-earth {
+			from { background-position: 120% 70px, 0px 0px, 0px 0px;  } 
+			to { background-position: -20% 70px, -1000px 0px, -500px 0px; }
+		}
+		@-moz-keyframes animate-earth {
+			from { background-position: 120% 70px, 0px 0px, 0px 0px;  } 
+			to { background-position: -20% 70px, -1000px 0px, -500px 0px; }
+		}
+		@-ms-keyframes animate-earth {
+			from { background-position: 120% 70px, 0px 0px, 0px 0px;  } 
+			to { background-position: -20% 70px, -1000px 0px, -500px 0px; }
+		}
+
+
+		@keyframes move-twink-back {
+		    from {background-position:0 0;}
+		    to {background-position:-10000px 5000px;}
+		}
+		@-webkit-keyframes move-twink-back {
+		    from {background-position:0 0;}
+		    to {background-position:-10000px 5000px;}
+		}
+		@-moz-keyframes move-twink-back {
+		    from {background-position:0 0;}
+		    to {background-position:-10000px 5000px;}
+		}
+		@-ms-keyframes move-twink-back {
+		    from {background-position:0 0;}
+		    to {background-position:-10000px 5000px;}
+		}
+
+		@keyframes move-mists-back {
+		    from {background-position:0 0;}
+		    to {background-position:-10000px 1000px;}
+		}
+		@-webkit-keyframes move-mists-back {
+		    from {background-position:0 0;}
+		    to {background-position:-10000px 1000px;}
+		}
+		@-moz-keyframes move-mists-back {
+		    from {background-position:0 0;}
+		    to {background-position:-10000px 1000px;}
+		}
+		@-ms-keyframes move-mists-back {
+		    from {background-position: 0 0;}
+		    to {background-position:-10000px 1000px;}
+		}
+
+		.stars, .twinks, .mists, .earth {
+			position:absolute;
+			top:0;
+			left:0;
+			right:0;
+			bottom:0;
+			width:100%;
+			height:100%;
+			display:block;
+            
+            
+		}
+
+		.stars {
+			background:#000 url(images/stars.png) repeat top center;
+		}
+
+        .rockete {
+            z-index: 1;
+			-ms-transform: rotate(0deg);
+			-webkit-transform: rotate(0deg);
+			transform: rotate(0deg);
+			display: block;
+            margin: 0px auto;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            margin-top: 160px;
+            margin-bottom: 0px;
+		}
+
+		.rocket {
+            z-index: 2;
+            -ms-transform: rotate(0deg);
+			-webkit-transition-duration: 0.5s;
+			-moz-transition-duration: 0.5s;
+			-webkit-transition-duration:0.5;
+			transform: rotate(0deg);
+			display: block;
+            margin: 0px auto;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            margin-top: 40%;
+            margin-bottom: 0px;
+		}
+
+		.rocket:hover { -webkit-transform:scale(1.2); -moz-transform:scale(1.2); -o-transform:scale(1.2); opacity: 1; z-index: 2; }
+
+
+		
+
+		.twinks{
+			background:transparent url(images/twinks.png) repeat top center;
+			-moz-animation:move-twink-back 200s linear infinite;
+			-ms-animation:move-twink-back 200s linear infinite;
+			-o-animation:move-twink-back 200s linear infinite;
+			-webkit-animation:move-twink-back 200s linear infinite;
+			animation:move-twink-back 200s linear infinite;
+		}
+
+		.earth {
+			margin: 0px auto;
+			background-image: url(images/earth.gif);
+			background-position: 120% 70px, 0px 0px, 0px 0px;
+			background-repeat: no-repeat, repeat-x, repeat-x;
+			animation: animate-earth linear 50s infinite;
+			-moz-animation: animate-earth linear 50s infinite;
+			-ms-animation: animate-earth linear 50s infinite;
+			-o-animation: animate-earth linear 50s infinite;
+			-webkit-animation: animate-earth linear 50s infinite;
+		}
+
+		.mists{
+		    background:transparent url(images/mists.png) repeat top center;
+			-moz-animation:move-mists-back 200s linear infinite;
+			-ms-animation:move-mists-back 200s linear infinite;
+			-o-animation:move-mists-back 200s linear infinite;
+			-webkit-animation:move-mists-back 200s linear infinite;
+			animation:move-mists-back 200s linear infinite;
+		}
+
+        .layer-3 {
+            z-index: 3;
+            -ms-transform: rotate(0deg);
+			-webkit-transform: rotate(0deg);
+			transform: rotate(0deg);
+			display: block;
+            margin: 0px auto;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            margin-top: -15%;
+            margin-bottom: 0px;
+    }
+
+    .layer-4 {
+            z-index: 4;
+            -ms-transform: rotate(0deg);
+			-webkit-transform: rotate(0deg);
+			transform: rotate(0deg);
+			display: block;
+            margin: 0px auto;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            margin-top: -15%;
+            margin-bottom: 0px;
+    }
+
+	</style>
+</head>
+<body style="background-color:rgb(0, 0, 0);">
+	<nav class="navbar navbar-dark bg-transparent fixed-top">
+      <a class="navbar-brand" href="index.php" style="color: #fff;">
+
+            <audio autoplay="true" loop="true">
+			<source src="hbde.mp3" type="audio/mp3">
+			</audio>
+	  </a>
+	</nav>
+
+	<div class="stars"></div>
+	<div class="twinks"></div>
+	<div class="earth"></div>
+    <div class="mists"></div>
+    
+    <!-- <div class="animate__animated animate__rubberBand">
+        <a href="diklik.html">
+	    <img src="images/up.png" alt="rocket" class="rockete" width="80%"></a>
+	</div> -->
+
+	<div class="animate__animated animate__pulse">
+        <a href="diklik.html">
+	    <img src="images/pear-play.png" alt="rocket" class="rocket" width="80%"></a>
+    </div>
+    
+    <!-- <div class="animate__animated animate__backInUp">
+        <a href="diklik.html">
+	    <img src="images/bawah.png" alt="rocket" class="layer-3" width="80%"></a>
+	</div> -->
+
+	<div class="navbar nav-center bg-transparent fixed-bottom ">
+		<div class="text-white" >
+		
+		</div>
+	</div>
+</body>
+</html>
