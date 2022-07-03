@@ -1,0 +1,72 @@
+<html><meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+<link href="https://hanyauntukmu.likeadream.repl.co/style.css" rel="stylesheet" type="text/css" /><script src="https://hanyauntukmu.likeadream.repl.co/script.js"></script>
+<head>
+</head>
+<body><div id="bodyblur"><img src="https://i.postimg.cc/0yJgcJvP/6f2d34fe6c8746c56c14fbc55308ef99.jpg" width="100%" height="100%"/></div>
+
+<!-- Isi Konten --><div id='Content'>
+<div class="image"><a href="https://i.postimg.cc/pdcCtSNK/Untitled.png" target="_blank" rel="noopener"> <img src="https://i.postimg.cc/CMvCqkBK/Nice-Png-hello-kitty-png-30223.png" width="100px" height="100px"/></div> </a><!--<div id="sp1"></div>-->
+<div><blockquote><p id="text"></p><p id="text2"></p></blockquote></div></div>
+<script type="text/javascript">
+
+
+
+            const swals = Swal.mixin({allowOutsideClick: false, cancelButtonColor: '#FF0040',});
+            const swalsy = Swal.mixin({confirmButtonText: 'Iya', allowOutsideClick: false,});
+            const swalst = Swal.mixin({allowOutsideClick: false, showConfirmButton: false, timer: 5000, timerProgressBar: true,});
+            
+            async function mulaitanya(){
+            	var { isConfirmed: tanyawal } = await swals.fire({title: `Hallo <b>Jannaaah!!`, imageUrl: 'https://i.postimg.cc/kXrk1gjm/profile-pic.png', imageWidth: 120, imageHeight: 120, confirmButtonText: 'Mulai', cancelButtonText: 'Langsung Aja', allowOutsideClick: false, showCancelButton: false,
+                
+            });
+                if(tanyawal){kuis();} else {nama = 'Jannaaaah';kuis();}
+            }
+
+            async function mulai(){
+                var { value: nama } = await swals.fire({
+                    title: 'Masukin nama kamu',
+                    input: 'text',
+                    imageUrl: 'https://i.postimg.cc/CMvCqkBK/Nice-Png-hello-kitty-png-30223.png', imageWidth: 120, imageHeight: 120,
+                    allowOutsideClick: false,
+                    showCancelButton: false,
+                });
+                if(nama && nama.length < 11){
+                	window.nama = nama;
+                    kuis();                                 
+                } else {
+                    await swals.fire('Ups!', 'Nama tidak boleh kosong atau lebih dari 10 karakter, ya!');
+                    mulai();
+                }
+            }
+            
+            async function kuis(){
+                
+                  	await swalst.fire({
+                      title: 'Cieee yang lah sudah Kompree!!!', 
+                      imageUrl: 'https://i.pinimg.com/originals/0b/ee/2d/0bee2d3252985dbdbc277942df1668ee.gif', imageWidth: 120, imageHeight: 120 ,
+                      });   	
+                      await swalst.fire({
+                      title: 'Selamaat Jannahh!!!......<br> atas jerih payah perjuangan yang kamu lakukan',
+                      imageUrl: 'https://i.postimg.cc/g06FWScx/tepukbadan.gif', imageWidth: 120, imageHeight: 120,
+                      });
+                      await swalst.fire({
+                      title: 'Alhamdulillah, lah sudah selesai.',
+                      imageUrl: 'https://i.pinimg.com/originals/69/90/a2/6990a2cc1dede6fd982ca90fad0813df.gif', imageWidth: 120, imageHeight: 120,
+                      });
+                      await swalst.fire({
+                      title: 'Doain kawan"ny cepet nyusul yoo, terus cepet wisudah. <br> selamat menempuh jalan hidup baru',
+                      imageUrl: 'https://i.postimg.cc/SsmkcNY9/bear-cute-1.gif', imageWidth: 120, imageHeight: 120,
+                      });
+                      text = "Happy Kompretualtion";
+                      emotnama = "";
+                      text2 = "Maaf yo jan dak biso hadir kesano, insya allah kalo dk ad halangan wisudah dateng kok jan! sukses teruss janaah... hhehe";
+                      showDiv();
+                      
+             }
+             mulaitanya();
+             
+</script>
+</body>
+</html>
